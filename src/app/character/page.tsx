@@ -9,12 +9,12 @@ export default function Home() {
       <h1>
         Page - <strong className="font-bold">Character</strong>
       </h1>
+      <div className="mx-auto">
+        <DiceRoller dice="4d6" />
+      </div>
       <div className="flex flex-row gap-4">
         <Link href="/">Home</Link>
         <Link href="/login">Login</Link>
-      </div>
-      <div>
-        <DiceRoller dice="-1d6+10" />
       </div>
     </main>
   );
